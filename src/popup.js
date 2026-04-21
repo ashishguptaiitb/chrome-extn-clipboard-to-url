@@ -20,12 +20,10 @@ async function openUrl(base) {
   }
 }
 
-// Prod
-document.getElementById("prod").addEventListener("click", () => {
-  openUrl("https://docs.kore.ai/");
-});
-
-// Staging
-document.getElementById("staging").addEventListener("click", () => {
-  openUrl("https://koreai-ai-for-service-dev.mintlify.app/");
+// Attach handler to all buttons
+document.querySelectorAll("button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const base = btn.getAttribute("data-base");
+    openUrl(base);
+  });
 });

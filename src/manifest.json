@@ -1,0 +1,21 @@
+{
+  "name": "MDX Path → Docs URL",
+  "description": "Reads a file path from clipboard and opens the corresponding docs.kore.ai help article.",
+  "version": "1.2",
+  "manifest_version": 3,
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "open-from-clipboard": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U"
+      },
+      "description": "Helps writers quickly open the published article from copied file path when they're authoring docs. Works for relative file path copied from VSCode tab of open file or for a root relative link added inline in an article."
+    }
+  }
+}

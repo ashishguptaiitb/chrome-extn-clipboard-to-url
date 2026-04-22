@@ -5,7 +5,7 @@ description: Open the help article corresponding to a copied file path with one 
 
 # Install
 
-1. Clone this repo locally.
+1. Clone this repo locally. 
    ![](/graphics/image6.png)
 
 1. Go to `chrome://extensions` and enable **Developer mode**.

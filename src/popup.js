@@ -1,6 +1,4 @@
 async function openUrl(base) {
-  const el = document.getElementById("status");
-
   try {
     const text = await navigator.clipboard.readText();
     if (!text) throw new Error("Empty clipboard");
@@ -12,11 +10,14 @@ async function openUrl(base) {
 
     const url = base + path;
 
-    el.textContent = "Opening: " + url;
-
     chrome.runtime.sendMessage({ url });
+
+    // Close popup immediately
+    window.close();
+
   } catch (e) {
-    el.textContent = "Error: " + e.message;
+    // Optional: keep silent or log only
+    console.error(e);
   }
 }
 

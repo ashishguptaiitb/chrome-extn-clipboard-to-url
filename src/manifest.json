@@ -1,7 +1,7 @@
 {
   "name": "MDX Path → Docs URL",
   "description": "Reads a file path from clipboard and opens the corresponding help article.",
-  "version": "1.3",
+  "version": "1.4",
   "manifest_version": 3,
   "permissions": ["tabs"],
   "background": {

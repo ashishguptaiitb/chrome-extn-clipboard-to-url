@@ -8,14 +8,14 @@ That's too many clicks and keypresses, but not anymore!
 
 This extension helps you open a published docs page in one-click. After copying the any file path, just click on the extension's icon in Chrome.
 
+![](/graphics/image1.png)
+
 It works in the following cases:
 
 - Copied path contains `/` or doesn't.
 - Copied path contains `.mdx` or doesn't.
 - Copied path contains an anchor or doesn't.
 
-![](/graphics/image1.png)
-
 ---
 
-A user-click is still required on the popup button because of security reasons. An extension isn't able to (rightly so) copy clipboard contents and launch a URL.
+A user click is still required on the popup button because of security reasons. An extension isn't able to (rightly so) copy clipboard contents and launch a URL.

@@ -1,68 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    padding: 12px;
-    min-width: max-content;
-    background: #f5f7fa;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* spacing between buttons */
-  }
-
-  button {
-    padding: 10px 14px;
-    font-size: 13px;
-    border-radius: 6px;
-    border: 1px solid #d0d7de;
-    cursor: pointer;
-    text-align: left;
-    white-space: nowrap; /* prevent wrapping */
-    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
-  }
-
-  button:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.18);
-  }
-
-  button:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-  }
-
-  /* Color variants */
-  .prod { background: #e6f0ff; border-color: #3b82f6; }
-  .service { background: #e8fff3; border-color: #10b981; }
-  .agent { background: #fff4e6; border-color: #f59e0b; }
-  .v2 { background: #f3e8ff; border-color: #8b5cf6; }
-  .management { background: #ffe4e6; border-color: #ef4444; }
-  .work { background: #e0f2fe; border-color: #0ea5e9; }
-  .process { background: #f0fdf4; border-color: #22c55e; }
-
-  #status {
-    margin-top: 10px;
-    font-size: 12px;
-    color: #444;
-  }
-</style>
+<link rel="stylesheet" href="popup.css">
 </head>
 
 <body>
 <div class="container">
-    <button class="prod" data-base="https://docs.kore.ai/">Docs site</button>
-    <button class="service" data-base="https://koreai-ai-for-service-dev.mintlify.app/">AI for Service stage</button>
-    <button class="agent" data-base="https://koreai-agent-platform-dev.mintlify.app/">Agent Platform stage</button>
-    <button class="v2" data-base="https://koreai-v2-agent-platform-dev.mintlify.app/">Agent Platform 2.0 stage</button>
-    <button class="management" data-base="https://koreai-agent-management-platform-dev.mintlify.app/">Agent Management Platform stage</button>
-    <button class="work" data-base="https://koreai-ai-for-work-dev.mintlify.app/">AI for Work stage</button>
-    <button class="process" data-base="https://koreai-ai-for-process-dev.mintlify.app/">AI for Process stage</button>
+  <button class="prod" data-base="https://docs.kore.ai/">Docs site</button>
+  <button class="service" data-base="https://koreai-ai-for-service-dev.mintlify.app/">AI for Service stage</button>
+  <button class="agent" data-base="https://koreai-agent-platform-dev.mintlify.app/">Agent Platform stage</button>
+  <button class="v2" data-base="https://koreai-v2-agent-platform-dev.mintlify.app/">Agent Platform 2.0 stage</button>
+  <button class="management" data-base="https://koreai-agent-management-platform-dev.mintlify.app/">Agent Management Platform stage</button>
+  <button class="work" data-base="https://koreai-ai-for-work-dev.mintlify.app/">AI for Work stage</button>
+  <button class="process" data-base="https://koreai-ai-for-process-dev.mintlify.app/">AI for Process stage</button>
 </div>
 
 <p id="status"></p>

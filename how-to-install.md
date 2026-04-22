@@ -7,7 +7,6 @@ description: Open the help article corresponding to a copied file path with one 
 
 1. Clone this repo locally.
    ![](/graphics/image6.png)
-   ![](/graphics/image7.png)
 
 1. Go to `chrome://extensions` and enable **Developer mode**.
 1. Select **Load unpacked**.

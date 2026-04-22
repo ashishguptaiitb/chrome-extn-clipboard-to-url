@@ -6,7 +6,7 @@ When we want to view a published doc corresponding to an mdx file, we take one o
 
 That's too many clicks and keypresses, but not anymore!
 
-This extension helps you open a published docs page in one-click. After copying the any file path, just click on the extension's icon in Chrome.
+This extension helps you open a published docs page in one-click. After copying the any file path, just click on the extension's icon in Chrome. See [how to install](/how-to-install.md).
 
 ![](/graphics/image1.png)
 

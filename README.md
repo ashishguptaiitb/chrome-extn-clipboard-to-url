@@ -2,7 +2,7 @@ When we want to view a help article corresponding to an mdx file, we take one of
 
 - Search on our doc site.
 - Search on Google.com.
-- Copy-paste the file path in the browser address bar, add `docs.kore.ai/` string before it, and remove `.mdx` extension from the end.
+- Copy-paste the file path in the browser address bar, add domain name (`docs.kore.ai/` or a stage link) string before it, and remove `.mdx` extension from the end.
 
 **That's too many clicks and keypresses, but not anymore**!
 

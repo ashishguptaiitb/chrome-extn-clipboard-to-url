@@ -1,8 +1,3 @@
----
-title: Install Google Chrome extension to open doc site URLs
-description: Open published help article corresponding to a copied file path in one-click.
----
-
 When we want to view a published doc corresponding to an mdx file, we take one of the following approaches: 
 
 - Search on our doc site.
@@ -18,6 +13,8 @@ It works in the following cases:
 - Copied path contains `/` or doesn't.
 - Copied path contains `.mdx` or doesn't.
 - Copied path contains an anchor or doesn't.
+
+![](/graphics/image1.png)
 
 ---
 

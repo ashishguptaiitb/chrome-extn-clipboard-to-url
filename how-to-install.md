@@ -3,7 +3,7 @@ title: Install Google Chrome extension to open doc site URLs
 description: Open published help article corresponding to a copied file path in one-click.
 ---
 
-## Install
+# Install
 
 1. Clone this repo locally.
 1. Go to `chrome://extensions` and enable **Developer mode**.
@@ -18,7 +18,7 @@ description: Open published help article corresponding to a copied file path in 
 1. Select **Site Settings**.
 1. Locate **Clipboard** and select **Allow**. This permission is required for the extension to read the copied URL from your clipboard.
 
-## Update 
+# Update 
 
 To update the extension after a new version release, go to `chrome://extensions` and select **Reload** icon.
 

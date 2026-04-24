@@ -1,7 +1,7 @@
 async function openUrl(base) {
   try {
     const text = await navigator.clipboard.readText();
-    if (!text) throw new Error("Empty clipboard");
+    if (!text) throw new Error();
 
     let path = text.trim()
       .replace(/^\/+/, "")
@@ -11,20 +11,21 @@ async function openUrl(base) {
     const url = base + path;
 
     chrome.runtime.sendMessage({ url });
-
-    // Close popup immediately
     window.close();
-
   } catch (e) {
-    // Optional: keep silent or log only
     console.error(e);
   }
 }
 
-// Attach handler to all buttons
-document.querySelectorAll("button").forEach(btn => {
+// Docs buttons
+document.querySelectorAll("button[data-base]").forEach(btn => {
   btn.addEventListener("click", () => {
-    const base = btn.getAttribute("data-base");
-    openUrl(base);
+    openUrl(btn.getAttribute("data-base"));
   });
+});
+
+// GitHub button
+document.getElementById("github").addEventListener("click", () => {
+  chrome.runtime.sendMessage("open-github");
+  window.close();
 });

@@ -1,21 +1,16 @@
 {
-  "name": "MDX Path → Docs URL",
-  "description": "Reads a file path from clipboard and opens the corresponding help article.",
-  "version": "1.4",
   "manifest_version": 3,
+  "name": "Docs Tools",
+  "version": "1.5",
+  "description": "Open docs sites from clipboard and GitHub source from current page.",
   "permissions": ["tabs"],
+  "host_permissions": [
+    "https://docs.kore.ai/*"
+  ],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
     "default_popup": "popup.html"
-  },
-  "commands": {
-    "open-from-clipboard": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+U"
-      },
-      "description": "Helps writers quickly open prod or stage articles from copied file path. Works for relative file path copied from VSCode tab of open file or for a root relative link added inline in an article."
-    }
   }
 }

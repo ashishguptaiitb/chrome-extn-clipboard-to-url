@@ -16,10 +16,10 @@ body {
 }
 
 .section-title {
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
   color: #6b7280;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -27,18 +27,18 @@ body {
 .divider {
   height: 1px;
   background: #e5e7eb;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 button {
-  padding: 10px 14px;
-  font-size: 13px;
+  padding: 8px 12px;
+  font-size: 12px;
   border-radius: 6px;
   border: 2px solid transparent;
   cursor: pointer;

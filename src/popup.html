@@ -3,20 +3,31 @@
 <head>
 <link rel="stylesheet" href="popup.css">
 </head>
+
 <body>
 
-<div class="container">
-  <!-- Docs URLs -->
-  <button class="prod" data-base="https://docs.kore.ai/">Docs site</button>
-  <button class="service" data-base="https://koreai-ai-for-service-dev.mintlify.app/">AI for Service stage</button>
-  <button class="agent" data-base="https://koreai-agent-platform-dev.mintlify.app/">Agent Platform stage</button>
-  <button class="v2" data-base="https://koreai-v2-agent-platform-dev.mintlify.app/">Agent Platform 2.0 stage</button>
-  <button class="management" data-base="https://koreai-agent-management-platform-dev.mintlify.app/">Agent Management Platform stage</button>
-  <button class="work" data-base="https://koreai-ai-for-work-dev.mintlify.app/">AI for Work stage</button>
-  <button class="process" data-base="https://koreai-ai-for-process-dev.mintlify.app/">AI for Process stage</button>
+<!-- Primary Section -->
+<div class="section">
+  <div class="section-title">Primary</div>
+  <div class="container">
+    <button class="prod" data-base="https://docs.kore.ai/">Published article</button>
+    <button id="github" class="github">GitHub source</button>
+  </div>
+</div>
 
-  <!-- GitHub -->
-  <button id="github" class="agent">Open GitHub Source</button>
+<div class="divider"></div>
+
+<!-- Staging Section -->
+<div class="section">
+  <div class="section-title">Staging</div>
+  <div class="container">
+    <button class="service" data-base="https://koreai-ai-for-service-dev.mintlify.app/">AI for Service</button>
+    <button class="agent" data-base="https://koreai-agent-platform-dev.mintlify.app/">Agent Platform</button>
+    <button class="v2" data-base="https://koreai-v2-agent-platform-dev.mintlify.app/">Agent Platform 2.0</button>
+    <button class="management" data-base="https://koreai-agent-management-platform-dev.mintlify.app/">Agent Management Platform</button>
+    <button class="work" data-base="https://koreai-ai-for-work-dev.mintlify.app/">AI for Work</button>
+    <button class="process" data-base="https://koreai-ai-for-process-dev.mintlify.app/">AI for Process</button>
+  </div>
 </div>
 
 <script src="popup.js"></script>

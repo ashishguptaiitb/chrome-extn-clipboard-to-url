@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Docs Tools",
+  "version": "1.0",
+  "description": "Open docs and GitHub source",
+
+  "permissions": ["tabs"],
+  "host_permissions": [
+    "https://docs.kore.ai/*"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "icons": {
+    "48": "icons/icon_48x48.png",
+    "128": "icons/icon_128x128.png"
+  }
+}

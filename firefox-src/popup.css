@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 12px;
+  min-width: max-content;
+  background: #f5f7fa;
+}
+
+.section {
+  margin-bottom: 8px;
+}
+
+/* GitHub button - distinct dark theme */
+.github {
+  background: #24292f;
+  color: #ffffff;
+}
+
+.section-title {
+  font-size: 10px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 5px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  color: #fff;
+  font-weight: 500;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* Lighter, distinct colors */
+.prod { background: #9ca3af; color: #111; }        /* light gray */
+.service { background: #86efac; color: #064e3b; }  /* light green */
+.agent { background: #fdba74; color: #7c2d12; }    /* light orange */
+.v2 { background: #c4b5fd; color: #4c1d95; }       /* light purple */
+.management { background: #fca5a5; color: #7f1d1d; } /* light red */
+.work { background: #7dd3fc; color: #0c4a6e; }     /* light blue */
+.process { background: #fde68a; color: #78350f; }  /* light yellow */
+
+#status {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #444;
+}

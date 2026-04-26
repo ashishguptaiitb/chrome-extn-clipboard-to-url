@@ -10,7 +10,7 @@ When we want to view a help article corresponding to an mdx file, we take one of
 
 The extension opens a help article **after you copy an article's path** with just a click. See [how to install](/how-to-install.md).
 
-![](/graphics/image1.png)
+![](/chrome-graphics/image1.png)
 
 The following cases are supported:
 

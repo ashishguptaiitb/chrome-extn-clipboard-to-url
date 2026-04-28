@@ -29,3 +29,9 @@ document.getElementById("github").addEventListener("click", () => {
   chrome.runtime.sendMessage("open-github");
   window.close();
 });
+
+// Switch between prod and stage
+document.getElementById("toggle-env").addEventListener("click", () => {
+  chrome.runtime.sendMessage("toggle-env");
+  window.close();
+});

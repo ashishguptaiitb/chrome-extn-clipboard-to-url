@@ -17,6 +17,40 @@ function toGitHubUrl(url) {
   return `${GH}/${path}`;
 }
 
+function toggleEnvUrl(url) {
+  if (!url) return null;
+
+  const clean = url.split(/[?#]/)[0];
+
+  // Case 1: Stage -> Prod
+  if (/https:\/\/[^/]+\.mintlify\.app/i.test(clean)) {
+    return clean.replace(/https:\/\/[^/]+\.mintlify\.app/i, "https://docs.kore.ai");
+  }
+
+  // Case 2: Prod -> Stage
+  if (clean.startsWith("https://docs.kore.ai")) {
+    const path = clean.replace("https://docs.kore.ai", "");
+
+    if (path.startsWith("/ai-for-service")) {
+      return "https://koreai-ai-for-service-dev.mintlify.app" + path;
+    }
+
+    if (path.startsWith("/agent-platform")) {
+      return "https://koreai-agent-platform-dev.mintlify.app" + path;
+    }
+
+    if (path.startsWith("/ai-for-work")) {
+      return "https://koreai-ai-for-work-dev.mintlify.app" + path;
+    }
+
+    if (path.startsWith("/ai-for-process")) {
+      return "https://koreai-ai-for-process-dev.mintlify.app" + path;
+    }
+  }
+
+  return null;
+}
+
 async function openFromActiveTab() {
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
   const target = toGitHubUrl(tab?.url);
@@ -35,4 +69,15 @@ chrome.runtime.onMessage.addListener((msg) => {
   if (msg === "open-github") {
     openFromActiveTab();
   }
-});
+if (msg === "toggle-env") {
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    const tab = tabs[0];
+    const target = toggleEnvUrl(tab?.url);
+
+    if (target && tab?.id) {
+      chrome.tabs.update(tab.id, { url: target });
+    }
+  });
+}
+}
+);

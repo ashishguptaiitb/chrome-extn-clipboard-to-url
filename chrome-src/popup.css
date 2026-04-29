@@ -9,12 +9,6 @@ body {
   margin-bottom: 8px;
 }
 
-/* GitHub button - distinct dark theme */
-.github {
-  background: #24292f;
-  color: #ffffff;
-}
-
 .section-title {
   font-size: 10px;
   font-weight: 600;
@@ -60,14 +54,17 @@ button:active {
   box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
-/* Lighter, distinct colors */
-.prod { background: #9ca3af; color: #111; }        /* light gray */
-.service { background: #86efac; color: #064e3b; }  /* light green */
-.agent { background: #fdba74; color: #7c2d12; }    /* light orange */
-.v2 { background: #c4b5fd; color: #4c1d95; }       /* light purple */
-.management { background: #fca5a5; color: #7f1d1d; } /* light red */
-.work { background: #7dd3fc; color: #0c4a6e; }     /* light blue */
-.process { background: #fde68a; color: #78350f; }  /* light yellow */
+/* Distinct colors for buttons */
+
+.github { background: #24292f; color: #ffffff; }      /* GitHub source - Black */
+.prod { background: #00674F; color: #F5F5F5; }        /* Clipboard to Prod - Emerald Green */
+.switcher { background: #800020; color: #F5F5F5; }    /* Prod-Stage switcher - Burgundy */
+.service { background: #86efac; color: #064e3b; }     /* light green */
+.agent { background: #fdba74; color: #7c2d12; }       /* light orange */
+.v2 { background: #c4b5fd; color: #4c1d95; }          /* light purple */
+.management { background: #fca5a5; color: #7f1d1d; }  /* light red */
+.work { background: #7dd3fc; color: #0c4a6e; }        /* light blue */
+.process { background: #fde68a; color: #78350f; }     /* light yellow */
 
 #status {
   margin-top: 10px;

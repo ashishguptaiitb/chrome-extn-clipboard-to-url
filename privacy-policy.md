@@ -2,13 +2,15 @@
 
 This extension helps technical writers quickly navigate to or switch between Kore.ai's doc environments. The environments are production, staging for each product, and GitHub repository source files.
 
+The extension is intended for internal documentation workflows and interacts with only the company website.
+
 ## Data Accessed by the Extension
 
 Limited info; processed within the browser; not persistent or stored; minimum possible permissions to provide its functionality; only actioned upon user request.
 
 * URL of only the active tab is read to convert to staging link or GitHub repository link.
-* Upon user request, clipboard content is read to open the corresponding production or stage URL.
-* Access is restricted to the 2 required sites `docs.kore.ai/` and `*.mintlify.app`.
+* Clipboard content is read only when the user clicks a button in the extension popup, and is used solely to construct a documentation URL.
+* Host permissions are limited to `docs.kore.ai/` and `*.mintlify.app` and are used only for URL transformation and navigation.
 * No automatic actions. An explicit user click is required for the functionality to work.
 
 ## Data NOT accessed by the Extension
@@ -22,8 +24,8 @@ Limited info; processed within the browser; not persistent or stored; minimum po
 ## Clarifications about Data Handling and Security
 
 * No third-party services are used. No API calls or telemetry is used.
-* User data never leaves the device. User data isn't persisted in any temporary or permanent storage. Only local processing upon user interaction.
-* No security or privacy risk as data isn't collected, transmitted, or processed.
+* User data never leaves the device. User data isn't persisted in any temporary or permanent storage. Processing is limited to local, in-browser operations. No background data processing occurs.
+* No cookies are used.
 
 ## Clarification about the Required Permissions
 

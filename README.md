@@ -13,19 +13,23 @@ To view a help article corresponding to an .mdx file, we take one of the followi
 
 ---
 <br />
+
 1. Install it from the [Chrome Web Store](https://chromewebstore.google.com/detail/docs-tools/lmdkofjdkegcjmcfimhkejllkclebfgi).
-1. Remove any old versions that you sideloaded.
-1. Go to chrome://extensions and click **Details** of Doc Tools extension.
-1. Select **Pin to Toolbar** and optionally, select **Allow in Incognito**.
-1. Click **Site Settings**.
-1. Locate **Clipboard** permission and select **Allow**.
+2. Remove any old versions that you sideloaded.
+3. Go to chrome://extensions and click **Details** of Doc Tools extension.
+4. Select **Pin to Toolbar** and optionally, select **Allow in Incognito**.
+5. Click **Site Settings**.
+6. Locate **Clipboard** permission and select **Allow**.
 
 <br />
+
 ![](/chrome-graphics/image1.png)
+
 <br />
 
 
 The extension does the following:
+
 - Opens published or staged article after you copy an article's path.
 - Opens GitHub source file of the open help article.
 - Switches between prod and stage URLs for any article.

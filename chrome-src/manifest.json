@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Docs Tools",
   "short_name": "Docs Tools",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Access all doc environments - prod, stages, and GitHub source.",
   "permissions": ["tabs"],
   "host_permissions": [

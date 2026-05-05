@@ -22,12 +22,12 @@ function toggleEnvUrl(url) {
 
   const clean = url.split(/[?#]/)[0];
 
-  // Case 1: Stage -> Prod
+  // Case 1: Stage and Prod switch
   if (/https:\/\/[^/]+\.mintlify\.app/i.test(clean)) {
     return clean.replace(/https:\/\/[^/]+\.mintlify\.app/i, "https://docs.kore.ai");
   }
 
-  // Case 2: Prod -> Stage
+  // Case 2: Prod to Stage for only the public docs.
   if (clean.startsWith("https://docs.kore.ai")) {
     const path = clean.replace("https://docs.kore.ai", "");
 

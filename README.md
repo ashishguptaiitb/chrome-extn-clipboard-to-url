@@ -16,7 +16,7 @@ To view a help article corresponding to an .mdx file, we take one of the followi
 
 1. Install it from the [Chrome Web Store](https://chromewebstore.google.com/detail/docs-tools/lmdkofjdkegcjmcfimhkejllkclebfgi).
 2. Remove any old versions that you sideloaded.
-3. Go to chrome://extensions and click **Details** of Doc Tools extension.
+3. Go to `chrome://extensions` and click **Details** of Doc Tools extension.
 4. Select **Pin to Toolbar** and optionally, select **Allow in Incognito**.
 5. Click **Site Settings**.
 6. Locate **Clipboard** permission and select **Allow**.

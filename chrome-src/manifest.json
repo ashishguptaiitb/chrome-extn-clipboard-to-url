@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "Docs Tools",
   "short_name": "Docs Tools",
-  "version": "1.0.1",
-  "description": "Access all doc environments - prod, stages, and GitHub source.",
+  "version": "1.0.2",
+  "description": "Access Kore.ai tech doc environments - prod, stages, and GitHub source.",
   "permissions": ["tabs"],
   "host_permissions": [
     "https://docs.kore.ai/*",
@@ -20,7 +20,7 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Access Kore doc environments",
+    "default_title": "Open Kore docs",
     "default_icon": {
       "16": "icons/icon_16x16.png",
       "32": "icons/icon_32x32.png",

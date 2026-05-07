@@ -1,9 +1,11 @@
 ---
-title: Install Google Chrome extension to open doc site URLs
+title: Manually Sideload the Extension in Chrome in Developer Mode
 description: Open the help article corresponding to a copied file path with one click.
 ---
 
-# Install
+## Install Manually using Source Code
+
+Install directly from [Chrome Web Store](https://chromewebstore.google.com/detail/docs-tools/lmdkofjdkegcjmcfimhkejllkclebfgi) for ease of installation and update. To sideload the extension using the source code, follow these steps:
 
 1. Clone this repo locally.
 
@@ -23,9 +25,13 @@ description: Open the help article corresponding to a copied file path with one 
 1. Select **Site Settings**.
 1. Locate **Clipboard** and select **Allow**. This permission is required for the extension to read the copied URL from your clipboard.
 
-# Update
+## Update Manually using Source Code
 
-To update the extension after a new version release, follow these steps:
+If you've [install via Chrome Web Store](https://chromewebstore.google.com/detail/docs-tools/lmdkofjdkegcjmcfimhkejllkclebfgi), then select **Update** in `chrome://extensions`.
+
+![](/chrome-graphics/image8.png)
+
+If you installed manually using the above steps, then follow these steps:
 
 1. Fetch the latest update of this repo.
 1. Go to `chrome://extensions` and select the **Reload** icon.

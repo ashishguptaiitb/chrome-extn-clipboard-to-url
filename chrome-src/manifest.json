@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "Docs Tools",
   "short_name": "Docs Tools",
-  "version": "1.0.2",
-  "description": "Access Kore.ai tech doc environments - prod, stages, and GitHub source.",
+  "version": "1.0.3",
+  "description": "Access Kore.ai docs environments - prod, stages, and GitHub source.",
   "permissions": ["tabs"],
   "host_permissions": [
     "https://docs.kore.ai/*",

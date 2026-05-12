@@ -1,21 +1,42 @@
-function toGitHubUrl(url) {
+function toggleGitHubUrl(url) {
   const DOCS = "https://docs.kore.ai";
   const GH = "https://github.com/Koredotcom/docs-v2/blob/main";
 
-  if (!url || !url.startsWith(DOCS)) return null;
+  if (!url) return null;
 
   const clean = url.split(/[?#]/)[0];
-  let path = clean.replace(DOCS, "").replace(/^\/+/, "");
 
-  if (!path) return null;
+  // Case 1: Prod docs -> GitHub source
+  if (clean.startsWith(DOCS)) {
+    let path = clean.replace(DOCS, "").replace(/^\/+/, "");
 
-  if (!/\.mdx$/i.test(path)) {
-    path = path.replace(/\/$/, "");
-    path += ".mdx";
+    if (!path) return null;
+
+    if (!/\.mdx$/i.test(path)) {
+      path = path.replace(/\/$/, "");
+      path += ".mdx";
+    }
+
+    return `${GH}/${path}`;
   }
 
-  return `${GH}/${path}`;
+  // Case 2: GitHub source -> Prod docs
+  if (clean.startsWith(GH)) {
+    let path = clean
+      .replace(GH, "")
+      .replace(/^\/+/, "")
+      .replace(/\.mdx$/i, "");
+
+    if (!path) return null;
+
+    return `${DOCS}/${path}`;
+  }
+
+  return null;
 }
+
+
+
 
 function toggleEnvUrl(url) {
   if (!url) return null;
@@ -51,11 +72,22 @@ function toggleEnvUrl(url) {
   return null;
 }
 
+
+
 async function openFromActiveTab() {
-  const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-  const target = toGitHubUrl(tab?.url);
-  if (target) chrome.tabs.create({ url: target });
+  const [tab] = await chrome.tabs.query({
+    active: true,
+    currentWindow: true
+  });
+
+  const target = toggleGitHubUrl(tab?.url);
+
+  if (target && tab?.id) {
+    chrome.tabs.update(tab.id, { url: target });
+  }
 }
+
+
 
 chrome.runtime.onMessage.addListener((msg) => {
   if (msg.url) {

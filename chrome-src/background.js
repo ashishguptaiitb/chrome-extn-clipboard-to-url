@@ -49,25 +49,25 @@ function toggleEnvUrl(url) {
   }
 
   // Case 2: Prod to Stage for only the public docs.
-  if (clean.startsWith("https://docs.kore.ai")) {
-    const path = clean.replace("https://docs.kore.ai", "");
+  if (clean.startsWith("https://docs.kore.ai"))
+    {
+      const path = clean.replace("https://docs.kore.ai", "");
 
-    if (path.startsWith("/ai-for-service")) {
-      return "https://koreai-ai-for-service-dev.mintlify.app" + path;
-    }
+      if (path.startsWith("/ai-for-service")) 
+      {
+        return "https://koreai-ai-for-service-dev.mintlify.app" + path;
+      }
 
-    if (path.startsWith("/agent-platform")) {
-      return "https://koreai-agent-platform-dev.mintlify.app" + path;
-    }
+      if (path.startsWith("/agent-platform")) 
+      {
+        return "https://koreai-agentplatform-dev.mintlify.app" + path;
+      }
 
-    if (path.startsWith("/ai-for-work")) {
-      return "https://koreai-ai-for-work-dev.mintlify.app" + path;
+      if (path.startsWith("/ai-for-work")) 
+      {
+        return "https://koreai-ai-for-work-dev.mintlify.app" + path;
+      }
     }
-
-    if (path.startsWith("/ai-for-process")) {
-      return "https://koreai-ai-for-process-dev.mintlify.app" + path;
-    }
-  }
 
   return null;
 }

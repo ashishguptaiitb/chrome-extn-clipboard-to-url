@@ -16,7 +16,6 @@ async function openUrl(base) {
     const validRoots = [
       "ai-for-service",
       "agent-platform",
-      "ai-for-process",
       "ai-for-work"
     ];
 

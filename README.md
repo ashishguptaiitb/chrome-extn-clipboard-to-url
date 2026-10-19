@@ -2,13 +2,15 @@
 
 A lightweight browser extension that simplifies navigation between published Kore.ai help articles, their staged version, and their GitHub source files. Same extension works in Edge as well.
 
+The extension is published from a paid/verified developer account and privacy policy is verified by Chrome's app validation team.
+
 **[Installation link from the Chrome Web Store](https://chromewebstore.google.com/detail/docs-tools/lmdkofjdkegcjmcfimhkejllkclebfgi)**
 
 ## Why I built it
 
 Technical writers move between a help article, its staged version, and its .mdx source multiple times a day. That's a lot of mousing around and clicks. Docs Tools extension reduces the repetitive copying, URL editing, and manual path conversion involved. Also, it improves review rate of staged content. It takes 2 clicks to go from VSCode authoring environment to staged URL.
 
-Use cases:
+**Use cases:**
 
 - Circle between stage and prod - check how the differences look.
 - View staged article while authoring it in 2 clicks. Copy relative path from VSCode tab.

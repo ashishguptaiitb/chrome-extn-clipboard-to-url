@@ -2,9 +2,7 @@
 
 A lightweight browser extension that simplifies navigation between published Kore.ai help articles, their staged version, and their GitHub source files. Same extension works in Edge as well.
 
-The extension is published from a paid/verified developer account and privacy policy is verified by Chrome's app validation team.
-
-<a title="Doc Tools installation link" href="https://chromewebstore.google.com/detail/docs-tools/lmdkofjdkegcjmcfimhkejllkclebfgi"><img width="40" alt="Doc Tools installation link" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Google_Chrome_Web_Store_icon_2022.svg/330px-Google_Chrome_Web_Store_icon_2022.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"></a>
+The extension is published from a paid/verified developer account and privacy policy is verified by Chrome's app validation team. **Install here** -> <a title="Doc Tools installation link" href="https://chromewebstore.google.com/detail/docs-tools/lmdkofjdkegcjmcfimhkejllkclebfgi"><img width="40" alt="Doc Tools installation link" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Google_Chrome_Web_Store_icon_2022.svg/330px-Google_Chrome_Web_Store_icon_2022.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"></a>
 
 ## Why I built it
 

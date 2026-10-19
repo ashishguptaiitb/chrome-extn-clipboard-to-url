@@ -1,38 +1,20 @@
-To view a help article corresponding to an .mdx file, we take one of the following paths:
+# Docs Tools — Google Chrome and Microsoft Edge Browser Extension
 
-- Search on our doc site.
-- Search on Google.com.
-- Copy-paste the file path in the browser address bar, add domain name (`docs.kore.ai` or a stage link).
-- Fidget to add or remove extra `/`, remove `.mdx` extension, and change `\` to `/`.
-<br />
-<br />
+A lightweight browser extension that simplifies navigation between published Kore.ai help articles, their staged version, and their GitHub source files. Same extension works in Edge as well.
 
-**That's too many clicks and keypresses, but not anymore**!
-<br />
-<br />
+**[Installation link from the Chrome Web Store](https://chromewebstore.google.com/detail/docs-tools/lmdkofjdkegcjmcfimhkejllkclebfgi)**
 
----
-<br />
+## Why I built it
 
-1. Install it from the [Chrome Web Store](https://chromewebstore.google.com/detail/docs-tools/lmdkofjdkegcjmcfimhkejllkclebfgi).
-2. Remove any old versions that you sideloaded.
-3. Go to `chrome://extensions` and click **Details** of Docs Tools extension.
-4. Select **Pin to Toolbar** and optionally, select **Allow in Incognito**.
-5. Click **Site Settings**.
+Technical writers move between a help article, its staged version, and its .mdx source multiple times a day. That's a lot of mousing around and clicks. Docs Tools extension reduces the repetitive copying, URL editing, and manual path conversion involved. Also, it improves review rate of staged content. It takes 2 clicks to go from VSCode authoring environment to staged URL.
 
-   ![Site settings in Chrome](/chrome-graphics/image4.png)
+Use cases:
 
-6. Locate **Clipboard** permission and select **Allow**.
-
-<br />
-![Pinned extension in Chrome](/chrome-graphics/image1.png)
-
-The extension does the following:
-
-- Opens published or staged article after you copy an article's path.
-- Opens GitHub source file of the open help article.
-- Switches between prod and stage URLs for any article.
-
+- Circle between stage and prod - check how the differences look.
+- View staged article while authoring it in 2 clicks. Copy relative path from VSCode tab.
+- Check content on stage, while reviewing in GitHub PR in 2 clicks.
+- To make a quick edit, go from the published article to its source file in 2 clicks.
+- When linking to an article, quickly preview it or even copy an anchor in it.
 
 The following usability enhancements are built-in:
 
@@ -40,6 +22,24 @@ The following usability enhancements are built-in:
 - Copied path may or may not contain `.mdx` extension. For example, relative path copied from VSCode contains it but the inline links don't.
 - Copied path may or may not contain an anchor. For example, links to an articles *head* don't contain anchors but deeplinks to sub-headings do.
 
----
+## Setup
+
+1. [Install the extension](https://chromewebstore.google.com/detail/docs-tools/lmdkofjdkegcjmcfimhkejllkclebfgi).
+1. Open `chrome://extensions`, select **Details**. Under **Site settings**, allow **Clipboard** access.
+1. Optionally, pin Docs Tools to the toolbar for ease of access.
+
+![Site settings in Chrome](/chrome-graphics/image4.png)
+
+Use it from here in the browser:
+
+![Pinned extension in Chrome](/chrome-graphics/image1.png)
+
+## Privacy and implementation
+
+- Built with Chrome Manifest V3.
+- Reads clipboard content only after a user action.
+- Processes navigation data locally in the browser.
+- Uses limited permissions for tabs and supported documentation sites.
+- Does not collect user data.
 
 A user click is still required on the pop-up button for security reasons. An extension can't copy clipboard contents and launch a URL (rightly so) without the user's input/consent.
